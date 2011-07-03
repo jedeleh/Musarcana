@@ -1,0 +1,15 @@
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clear-both {
+  clear: both; }
+
+.light-blue {
+  background-color: #ffffcc; }
+
+.everything {
+  -moz-border-radius: 5px;
+  border-radius: 5px; }

@@ -1,4 +1,6 @@
 Musarcana::Application.routes.draw do
+  get "musarcana/dashboard"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -11,10 +13,7 @@ Musarcana::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Sample resource route with options:
-  #   resources :products do
+  #   resources :products # Sample resource route with options: #   resources :products do
   #     member do
   #       get 'short'
   #       post 'toggle'
@@ -48,7 +47,7 @@ Musarcana::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "musarcana#dashboard"
 
   # See how all your routes lay out with "rake routes"
 
