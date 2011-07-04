@@ -1,0 +1,21 @@
+%h1 Listing shouts
+
+%table
+  %tr
+    %th Content
+    %th Time
+    %th
+    %th
+    %th
+
+  - @shouts.each do |shout|
+    %tr
+      %td= shout.content
+      %td= shout.time
+      %td= link_to 'Show', shout
+      %td= link_to 'Edit', edit_shout_path(shout)
+      %td= link_to 'Destroy', shout, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Shout', new_shout_path

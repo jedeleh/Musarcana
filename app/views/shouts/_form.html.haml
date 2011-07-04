@@ -1,0 +1,16 @@
+= form_for @shout do |f|
+  -if @shout.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@shout.errors.count, "error")} prohibited this shout from being saved:"
+      %ul
+        - @shout.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :content
+    = f.text_field :content
+  .field
+    = f.label :time
+    = f.datetime_select :time
+  .actions
+    = f.submit 'Save'

@@ -1,0 +1,5 @@
+-Shout.order("created_at ASC").limit(10).offset(0).each do |shout|
+  ="#{display_user(shout.user_id)} said #{shout.content}"
+
+
+

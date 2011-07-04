@@ -1,9 +1,9 @@
 .staff
-  .footer-banner
-    .bass.float-left
-    .repeat-lower
   .information
     .psychocode.float-left
+      - if (controller_name != 'musarcana' && action_name != 'dashboard')
+        %a{:href => musarcana_dashboard_path}
+          %span Return to dashboard
     .copyright.float-right
       %label &copy; 2011 Psychocode, Inc.
 

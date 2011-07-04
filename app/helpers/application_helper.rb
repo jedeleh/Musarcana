@@ -10,4 +10,9 @@ module ApplicationHelper
     stylesheet_link_tag Dir.chdir(File.join(Rails.root, "public", "stylesheets")) { Dir.glob(glob_string).sort }
   end
 
+  def display_user(user_id)
+    user = User.find(user_id)
+    user.email
+  end
+
 end

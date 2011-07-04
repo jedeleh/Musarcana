@@ -1,0 +1,23 @@
+%h1 Listing libraries
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th User
+    %th
+    %th
+    %th
+
+  - @libraries.each do |library|
+    %tr
+      %td= library.name
+      %td= library.description
+      %td= library.user_id
+      %td= link_to 'Show', library
+      %td= link_to 'Edit', edit_library_path(library)
+      %td= link_to 'Destroy', library, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Library', new_library_path

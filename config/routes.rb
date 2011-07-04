@@ -1,4 +1,20 @@
 Musarcana::Application.routes.draw do
+  resources :shouts
+
+  devise_for :users, :controllers => { :registrations => "users" }
+
+  resources :users
+
+  resources :shouts
+
+  resources :artists
+
+  resources :composers
+
+  resources :albums
+
+  resources :libraries
+
   get "musarcana/dashboard"
 
   # The priority is based upon order of creation:

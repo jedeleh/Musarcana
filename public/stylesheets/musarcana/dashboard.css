@@ -17,6 +17,15 @@
   border-radius: 5px;
   height: 200px;
   width: 315px; }
+  .widget ul {
+    margin-left: -20px;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 20px; }
+    .widget ul li {
+      margin-left: -20px; }
+      .widget ul li .no-margin {
+        .margin-left: 30px; }
 
 .portlet-header {
   padding-left: 10px;
@@ -34,8 +43,16 @@
   /*color: #6c006a */
   color: black; }
 
-/*.my-stuff */
-/*.tasks */
+.my-stuff {
+  font-family: Verdana;
+  font-weight: lighter;
+  font-size: 15px; }
+
+.tasks {
+  font-family: Verdana;
+  font-weight: lighter;
+  font-size: 15px; }
+
 /*.latest-updates */
 /*.online */
 /*.shouts */

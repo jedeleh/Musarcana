@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @artist.first_name
+%p
+  %b Last name:
+  = @artist.last_name
+%p
+  %b Nationality:
+  = @artist.nationality
+%p
+  %b Birth date:
+  = @artist.birth_date
+%p
+  %b Death date:
+  = @artist.death_date
+
+= link_to 'Edit', edit_artist_path(@artist)
+\|
+= link_to 'Back', artists_path

@@ -1,20 +1,26 @@
 .dashboard.clear-both
   .workspace.light-blue
     .widget.my-stuff.float-left
-      .portlet-header My Musarcana
+      .portlet-header What would you like to do?
       .portlet-content
+        = render 'my_musarcana'
     .widget.latest-updates.float-left
+      .portlet-header What are you looking for?
+      .portlet-content
+        = render 'tasks'
+    .widget.tasks.float-left
       .portlet-header Latest updates
       .portlet-content
-    .widget.tasks.float-left
-      .portlet-header Things to do
-      .portlet-content
+        = render 'updates'
     .widget.online.float-left
       .portlet-header Who's online
       .portlet-content
+        = render 'online'
     .widget.shouts.float-left
       .portlet-header Shouts
       .portlet-content
+        = render 'shouts'
     .widget.status.float-left
       .portlet-header Status
       .portlet-content
+        = render 'status'

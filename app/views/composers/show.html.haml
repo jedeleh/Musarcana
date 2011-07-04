@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @composer.first_name
+%p
+  %b Last name:
+  = @composer.last_name
+%p
+  %b Nationality:
+  = @composer.nationality
+%p
+  %b Birth date:
+  = @composer.birth_date
+%p
+  %b Death date:
+  = @composer.death_date
+
+= link_to 'Edit', edit_composer_path(@composer)
+\|
+= link_to 'Back', composers_path

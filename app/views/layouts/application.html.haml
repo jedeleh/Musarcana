@@ -18,6 +18,8 @@
     = load_javascript_for_directory "#{controller_name}/#{action_name}"
     = csrf_meta_tag
   %body
+    .notice
+    .alert
     .everything.light-blue
       = render 'layouts/header'
       = yield

@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $(".workspace").sortable({
     handle: '.portlet-header'
+    //placeholder: 'ui-state-highlight'
   });
 
   $('.widget').addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" );

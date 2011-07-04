@@ -1,0 +1,27 @@
+%h1 Listing composers
+
+%table
+  %tr
+    %th First name
+    %th Last name
+    %th Nationality
+    %th Birth date
+    %th Death date
+    %th
+    %th
+    %th
+
+  - @composers.each do |composer|
+    %tr
+      %td= composer.first_name
+      %td= composer.last_name
+      %td= composer.nationality
+      %td= composer.birth_date
+      %td= composer.death_date
+      %td= link_to 'Show', composer
+      %td= link_to 'Edit', edit_composer_path(composer)
+      %td= link_to 'Destroy', composer, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Composer', new_composer_path

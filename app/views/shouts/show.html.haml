@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Content:
+  = @shout.content
+%p
+  %b Time:
+  = @shout.time
+
+= link_to 'Edit', edit_shout_path(@shout)
+\|
+= link_to 'Back', shouts_path
